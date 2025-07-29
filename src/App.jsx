@@ -9,16 +9,16 @@ import MovieAgeLimit from "./components/MovieAgeLimit"
 function App() {
 	return (
 		<>
-			<Header></Header>
+		  <Header></Header>
 			
-			<main>
-				<MovieGenres></MovieGenres>
-				<MovieInfo></MovieInfo>
-				<MovieRating></MovieRating>
-				<MovieActions></MovieActions>
-				<PopularMoviesSlider></PopularMoviesSlider>
-				<MovieAgeLimit></MovieAgeLimit>
-			</main>
+		  <main>
+			<MovieGenres></MovieGenres>
+			<MovieInfo></MovieInfo>
+			<MovieRating></MovieRating>
+			<MovieActions></MovieActions>
+			<PopularMoviesSlider></PopularMoviesSlider>
+			<MovieAgeLimit></MovieAgeLimit>
+		  </main>
 		</>
 	)
 }
