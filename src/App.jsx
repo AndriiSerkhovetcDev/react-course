@@ -10,6 +10,7 @@ function App() {
 	return (
 		<>
 			<Header></Header>
+			
 			<main>
 				<MovieGenres></MovieGenres>
 				<MovieInfo></MovieInfo>
