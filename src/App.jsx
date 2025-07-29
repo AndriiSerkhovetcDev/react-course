@@ -7,20 +7,20 @@ import PopularMoviesSlider from "./components/PopularMoviesSlider"
 import MovieAgeLimit from "./components/MovieAgeLimit"
 
 function App() {
-	return (
-		<>
-		  <Header></Header>
-			
-		  <main>
-			<MovieGenres></MovieGenres>
-			<MovieInfo></MovieInfo>
-			<MovieRating></MovieRating>
-			<MovieActions></MovieActions>
-			<PopularMoviesSlider></PopularMoviesSlider>
-			<MovieAgeLimit></MovieAgeLimit>
-		  </main>
-		</>
-	)
+  return (
+    <>
+      <Header></Header>
+	
+      <main>
+	<MovieGenres></MovieGenres>
+	<MovieInfo></MovieInfo>
+	<MovieRating></MovieRating>
+	<MovieActions></MovieActions>
+	<PopularMoviesSlider></PopularMoviesSlider>
+	<MovieAgeLimit></MovieAgeLimit>
+     </main>
+   </>
+  )
 }
 
 export default App
