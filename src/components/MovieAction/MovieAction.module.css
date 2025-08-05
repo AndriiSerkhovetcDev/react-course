@@ -1,0 +1,41 @@
+.movieActions {
+    margin-bottom: 30px;
+}
+
+.movieActionsStream, 
+.movieActionsEpisodes{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 142%;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movieActionsStream {
+    background-color: #D40D1F;
+    margin-right: 90px;
+}
+
+.movieActionsStream::after {
+  content: "";
+  display: inline-block;
+  background-image: url('../../assets/icons/play-circle.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+
+.movieActionsEpisodes {
+    background-color: transparent;
+    border: 1px solid #fff;
+}

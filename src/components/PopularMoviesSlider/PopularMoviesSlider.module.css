@@ -1,0 +1,71 @@
+.moviesSlider {
+    max-width: 850px;
+}
+
+.movieSliderControlls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.movieSliderButtons {
+    display: flex;
+    gap: 25px;
+}
+
+.movieSliderButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #A7A6A6;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.movieSliderButton.movieSliderButtonActive {
+    border-color: #fff;
+}
+
+.movieSliderButton.movieSliderButtonActive>.arrowBack,
+.movieSliderButton.movieSliderButtonActive>.arrowForward{
+    stroke: #fff;
+}
+
+.movieSliderButton .arrowBack,
+.movieSliderButton .arrowForward {
+    stroke: #A7A6A6;
+    transition: border-color 0.3s ease;
+}
+
+.movieSliderButton .arrowForward {
+    transform: rotate(180deg);
+}
+
+.moviesSliderTrack {
+    display: flex;
+    gap: 25px;
+}
+
+.moviesSliderTitle {
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.moviesSliderItem {
+    width: 150px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.moviesSliderItemImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 

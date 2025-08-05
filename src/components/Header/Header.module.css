@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerDate {
+    font-family: "KyivType Titling";
+    font-weight: 500;
+    font-size: 24px;
+    color: #C8C8C8;
+}
+
+.headerLogoImage {
+    width: 100%;
+    max-width: 156px;
+    height: auto;
+    margin-right: 56px;
+}
+
+.headerDivider {
+    display: inline-block;
+    background-color: white; 
+    margin-right: 26px;
+    width: 3px;
+    height: 28px;
+}
+
+.headerRight {
+    display: inline-flex;
+    align-items: center;
+}
+
+.headerSearch {
+    width: 43px;
+    height: 43px;
+    background: url('../../assets/icons/fe_search.svg');
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 42px;
+}
+
+.headerAvatarImage {
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    cursor: pointer;
+    margin-right: 33px;
+}

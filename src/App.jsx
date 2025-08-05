@@ -1,24 +1,30 @@
-import Header from "./components/Header"
-import MovieGenres from "./components/MovieGenres"
-import MovieInfo from "./components/MovieInfo"
-import MovieRating from "./components/MovieRating"
-import MovieActions from "./components/MovieActions"
-import PopularMoviesSlider from "./components/PopularMoviesSlider"
-import MovieAgeLimit from "./components/MovieAgeLimit"
+import Header from "./components/Header/Header"
+import MovieGenres from "./components/MovieGenres/MovieGenres"
+import MovieInfo from "./components/MovieInfo/MovieInfo"
+import MovieRating from "./components/MovieRating/MovieRating"
+import MovieActions from "./components/MovieAction/MovieActions"
+import PopularMoviesSlider from "./components/PopularMoviesSlider/PopularMoviesSlider"
+import MovieAgeLimit from "./components/MovieAgeLimit/MovieAgeLimit"
+import "./App.css"
 
 function App() {
 	return (
 		<>
-			<Header></Header>
-			
-			<main>
-				<MovieGenres></MovieGenres>
-				<MovieInfo></MovieInfo>
-				<MovieRating></MovieRating>
-				<MovieActions></MovieActions>
-				<PopularMoviesSlider></PopularMoviesSlider>
-				<MovieAgeLimit></MovieAgeLimit>
-			</main>
+			<div className="container">
+				<Header></Header>
+
+				<main className="main">
+					<MovieGenres></MovieGenres>
+					<MovieInfo></MovieInfo>
+					<MovieRating></MovieRating>
+					<MovieActions></MovieActions>
+					
+					<div className="main-row">
+						<PopularMoviesSlider></PopularMoviesSlider>
+						<MovieAgeLimit></MovieAgeLimit>
+					</div>
+				</main>
+			</div>
 		</>
 	)
 }

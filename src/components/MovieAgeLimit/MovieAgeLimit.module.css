@@ -1,0 +1,22 @@
+.movieAgeLimit {
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 66px;
+    background-color: #FFFFFF7D;
+}
+
+.movieAgeLimit::before {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 66px;
+    background-color: #D40D1F;
+}
+
+.movieAgeLimitValue {
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 30px;
+}

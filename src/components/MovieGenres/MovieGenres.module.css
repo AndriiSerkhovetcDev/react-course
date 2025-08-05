@@ -1,0 +1,20 @@
+.movieGenres {
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 20;
+}
+
+.movieGenresItems {
+    display: inline-flex;
+    align-items: center;
+}
+
+.movieGenreSeperator::before {
+    content: '';
+    display: block;
+    background-color: white; 
+    margin: 0 20px;
+    width: 3px;
+    height: 30px;
+}
