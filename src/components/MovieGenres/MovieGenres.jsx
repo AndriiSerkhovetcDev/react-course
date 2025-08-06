@@ -7,13 +7,20 @@ import style from "./MovieGenres.module.css"
 const MovieGenres = ({ genres = [] }) => { 
     return (
         <div className={style.movieGenres}>
-            <span className={style.movieGenresItems}>
-                Drama
-                <span className={style.movieGenreSeperator}></span>
-                Thriller
-                <span className={style.movieGenreSeperator}></span>
-                Supernatural
-            </span>
+            {Array.isArray(genres) && genres.length > 0 ? (
+                genres.map((genre, index) =>  {
+                    const isLast = index === genres.length - 1;
+
+                    return (
+                        <span key={index} className={style.movieGenresItems}>
+                            {genre}
+                            {!isLast && <span className={style.movieGenreSeperator}></span>}
+                        </span>
+                    )
+                })
+            ) : (
+                <p>Genres is not found</p>
+            )}
         </div>
     );
 };
