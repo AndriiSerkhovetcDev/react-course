@@ -15,7 +15,7 @@
     border-radius: 6px;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .movieActionsStream {
@@ -34,6 +34,10 @@
   margin-left: 8px;
 }
 
+.movieActionsStream:hover,
+.movieActionsEpisodes:hover {
+   transform: scale(1.05);
+}
 
 .movieActionsEpisodes {
     background-color: transparent;
