@@ -5,23 +5,30 @@ import MovieRating from "./components/MovieRating/MovieRating"
 import MovieActions from "./components/MovieAction/MovieActions"
 import PopularMoviesSlider from "./components/PopularMoviesSlider/PopularMoviesSlider"
 import MovieAgeLimit from "./components/MovieAgeLimit/MovieAgeLimit"
+import { 
+	headerProps,
+	movieGenresProps,
+	movieInfoProps,
+	movieRatingProps,
+	popularSliderProps,
+	movieAgeLimitProps } from "./data/propsData"
 import "./App.css"
 
 function App() {
 	return (
 		<>
 			<div className="container">
-				<Header></Header>
+				<Header {...headerProps} />
 
 				<main className="main">
-					<MovieGenres></MovieGenres>
-					<MovieInfo></MovieInfo>
-					<MovieRating></MovieRating>
-					<MovieActions></MovieActions>
+					<MovieGenres {...movieGenresProps} />
+					<MovieInfo {...movieInfoProps} />
+					<MovieRating {...movieRatingProps} />
+					<MovieActions />
 					
 					<div className="main-row">
-						<PopularMoviesSlider></PopularMoviesSlider>
-						<MovieAgeLimit></MovieAgeLimit>
+						<PopularMoviesSlider {...popularSliderProps} />
+						<MovieAgeLimit {...movieAgeLimitProps} />
 					</div>
 				</main>
 			</div>

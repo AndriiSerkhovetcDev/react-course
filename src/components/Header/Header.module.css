@@ -12,18 +12,29 @@
     align-items: center;
 }
 
-.headerDate {
-    font-family: "KyivType Titling";
-    font-weight: 500;
-    font-size: 24px;
-    color: #C8C8C8;
-}
-
 .headerLogoImage {
     width: 100%;
     max-width: 156px;
     height: auto;
     margin-right: 56px;
+}
+
+.headerLogin {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: #D40D1F;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-right: 33px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.headerLogin:hover {
+    background-color: transparent;
+    border-color: #fff;;
 }
 
 .headerDivider {

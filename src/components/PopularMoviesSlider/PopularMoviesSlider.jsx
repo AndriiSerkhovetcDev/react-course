@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import style from "./PopularMoviesSlider.module.css"
 import breakingBadImg from "../../assets/netflix-slide-1.jpg"
 import rainSlideImg from "../../assets/netflix-slide-2.jpg"
@@ -6,12 +8,13 @@ import lifeYearImg from "../../assets/netflix-slide-3.jpg"
 import moneyHeistImg from "../../assets/netflix-slide-4.jpg"
 import squidGameImg from "../../assets/netflix-slide-5.jpg"
 
-const PopularMoviesSlider = () => {
+
+const PopularMoviesSlider = ({ title = '' }) => {
     
     return (
         <div className={style.moviesSlider}>
             <div className={style.movieSliderControlls}>
-                <p className={style.moviesSliderTitle}>popular this week</p>
+                <p className={style.moviesSliderTitle}>{title}</p>
                 <div className={style.movieSliderButtons}>
                     <button className={`${style.movieSliderButton} `}>
                         <svg className={style.arrowBack} width="25" height="25" viewBox="0 0 12 12" fill="none">
@@ -46,5 +49,10 @@ const PopularMoviesSlider = () => {
         </div>
     );
 };
+
+PopularMoviesSlider.propTypes = {
+    title: PropTypes.string
+}
+
 
 export default PopularMoviesSlider;

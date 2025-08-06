@@ -1,31 +1,45 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import style from "./MovieInfo.module.css"
 
-const MovieInfo = () => {  
+const MovieInfo = ({ title, year, director, seasons, descriptions }) => {  
     return (
         <div className={style.movieInfo}>
-            <h1 className={style.movieTitle}>Stranger Things</h1>
+            <h1 className={style.movieTitle}>{title}</h1>
             <p className={style.movieInfoDetails}>
-                <span className={style.movieInfoYear}>2019</span>
+                <span className={style.movieInfoYear}>{year}</span>
                 <span className={style.movieInfoSeparator}></span>
                 <span className={style.movieInfoDirector}>
                     <span className={style.movieInfoDirectorLabel}>director:</span>
-                    <span className={style.movieInfoDirectorName}>Shawn Levy</span>
+                    <span className={style.movieInfoDirectorName}>{director}</span>
                 </span>
                 <span className={style.movieInfoSeparator}></span>
                 <span className={style.movieInfoSeasons}>
                     <span className={style.movieInfoSeasonsLabel}>seasons:</span>
-                    <span className={style.movieInfoSeasonsValue}>3 (5 Episodes)</span>
+                    <span className={style.movieInfoSeasonsValue}>{seasons}</span>
                 </span>
             </p>
 
-            <p className={style.movieInfoDescription}>
-                In 1980s Indiana, a group of young friends witness supernatural forces
-                and secret government exploits. As they search for answers, the children unravel
-                a series of extraordinary mysteries.
-            </p>
+            <p className={style.movieInfoDescription}>{descriptions}</p>
         </div>    
     );
+};
+
+MovieInfo.propTypes = {
+    title: PropTypes.string,
+    year: PropTypes.number,
+    director: PropTypes.string,
+    seasons: PropTypes.string,
+    descriptions: PropTypes.string
+}
+
+MovieInfo.defaultProps = {
+    title: '',
+    year: 0,
+    director: '',
+    seasons: '',
+    descriptions: ''
 };
 
 export default MovieInfo;
