@@ -9,13 +9,27 @@ const MovieRating = ({ rating = 1 }) => {
         return index < rating ? true : false
     })
 
+    const handlerCLickStart = () => {
+        alert("New rating saved")
+    }
+
     return (
         <div className={style.movieRating}>
             {movieRating.map((star, index) => 
                 star ? (
-                    <span key={index} className={style.movieRatingStar}>★</span>
+                    <button 
+                        key={index}
+                        className={style.movieRatingStar}
+                        onClick={handlerCLickStart}>
+                            ★
+                    </button>
                 ) : (
-                    <span key={index} className={`${style.movieRatingStar} ${style.empty}`}>★</span>
+                    <button
+                        key={index}
+                        className={`${style.movieRatingStar} ${style.empty}`}
+                        onClick={handlerCLickStart}>
+                            ★
+                    </button>
                 )
             ) }
         </div>
