@@ -11,7 +11,7 @@ import {
 	movieInfoProps,
 	movieRatingProps,
 	popularSliderProps,
-	movieAgeLimitProps } from "./data/propsData"
+	movieAgeLimitProps } from "./data/mockData"
 import "./App.css"
 
 function App() {

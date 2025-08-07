@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FormattedDate from '../FormattedDate';
+import HeaderSearch from '../HeaderSearch/HeaderSearch';
 
 import logo from "../../assets/netflix-logo.png"
 import avatar from "../../assets/avatar.jpg"
@@ -13,13 +14,13 @@ const Header = ({ isLogin = false }) => {
         <header className={style.header}>
             <div className={style.headerLeft}>
                 <div className={style.headerLogo}>
-                <img className={style.headerLogoImage} src={logo} alt="Netflix" />
+                    <img className={style.headerLogoImage} src={logo} alt="Netflix" />
                 </div>
                 <span className={style.headerDivider}></span>
                 <FormattedDate />
             </div>
              <div className={style.headerRight}>
-                <button className={style.headerSearch}></button>
+                <HeaderSearch />
                 {isLogin ? 
                     (<div className={style.headerAvatar}>
                         <img className={style.headerAvatarImage} src={avatar} alt="Avatar" />

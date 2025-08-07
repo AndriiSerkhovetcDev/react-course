@@ -1,0 +1,115 @@
+.headerSearchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInputContainer {
+    position: relative;
+}
+
+.headerSearch {
+    width: 43px;
+    height: 43px;
+    background: url('../../assets/icons/fe_search.svg');
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 42px 0 30px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 30px 6px 8px;
+    outline: none;
+    opacity: 0;
+    width: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, border-color 0.3s ease ;
+    pointer-events: none;
+}
+
+.searchInput::placeholder {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.searchInput:focus {
+    border-color: #D40D1F;
+}
+
+.showSearchInput {
+    width: 250px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.resetSearchValue {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.resetSearchValue:hover {
+    color: #D40D1F;
+}
+
+.searchResultsWrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: transparent;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.userSearchResult {
+    display: block;
+    padding: 15px 15px 15px 0;
+    font-weight: 800;
+    width: 250px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.showSearchResult {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.searchResultsList {
+    list-style-type: none; 
+}
+
+.searchResultItem {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    transition: color 0.3s ease;
+}
+
+.searchResultItem:hover {
+    color: #D40D1F;
+}
+
+.emptySearhResult {
+    color: #fff;
+}
