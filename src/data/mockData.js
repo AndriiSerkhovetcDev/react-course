@@ -58,5 +58,3 @@ export const netflixTitles = [
     "To All the Boys I've Loved Before",
     "The Kissing Booth"
 ];
-
-export const test {}
