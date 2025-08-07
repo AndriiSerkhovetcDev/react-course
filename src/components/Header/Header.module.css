@@ -50,16 +50,6 @@
     align-items: center;
 }
 
-.headerSearch {
-    width: 43px;
-    height: 43px;
-    background: url('../../assets/icons/fe_search.svg');
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    margin-right: 42px;
-}
-
 .headerAvatarImage {
     border-radius: 50%;
     width: 74px;
